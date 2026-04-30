@@ -157,7 +157,7 @@ body {
 .category-img-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures image fills the square without stretching */
+    object-fit: contain; /* Ensures image fills the square without stretching */
 }
 
 .category-card:hover .category-img-wrapper {
