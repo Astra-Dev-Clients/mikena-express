@@ -5,13 +5,18 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
 
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 
 .container{
     margin: 0 40px 0 40px;
+    width: 100%;
 }
 
 
