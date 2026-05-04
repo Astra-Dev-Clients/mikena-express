@@ -399,6 +399,113 @@
 
 
 
+
+
+<!-- Discorver -->
+
+<section class="container-fluid px-4 mt-5">
+    <!-- Header Text -->
+    <div class="mb-4">
+        <h4 class="fw-bold mb-1">Discover More</h4>
+        <p class="text-muted small">Find the latest releases, offers and exclusives right here</p>
+    </div>
+
+    <div class="row g-3">
+        <!-- Left Side: Large Banner (Samsung S26) -->
+        <div class="col-lg-6">
+            <div class="discover-card large-card rounded-4 shadow-sm h-100" 
+                 style="background-image: url('./Assets/images/products/access.jpg');">
+                <div class="card-overlay p-5 text-end d-flex flex-column justify-content-end bg-dark bg-opacity-50 rounded-4">
+                    <h2 class="fw-bold text-white">Get all the latest at 20% Off</h2>
+                    <p class="lead text-white">Limited time offer - don't miss out!</p>
+                    <button class="btn btn-success fw-bold px-4 py-2 mt-2">Shop Now!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Nested Grid -->
+        <div class="col-lg-6">
+            <div class="row g-3 h-100">
+                <!-- Top Wide Banner (Soundcore) -->
+                <div class="col-12">
+                    <div class="discover-card wide-card rounded-4 shadow-sm" 
+                         style="background-image: url('./Assets/images/products/home_accessories-1.png');">
+                        <div class="card-overlay p-4 bg-dark bg-opacity-50 d-flex flex-column justify-content-end">
+                             <h2 class="fw-bold text-white">Home accessories at 20% Off</h2>
+                             <p class="text-white">Explore our exclusive range of home accessories</p>
+                             <button class="btn btn-success fw-bold px-3 py-1 mt-2">Shop Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bottom Left Square (Xiaomi) -->
+                <div class="col-md-6">
+                    <div class="discover-card square-card rounded-4 shadow-sm" 
+                         style="background-image: url('./Assets/images/products/xiaomi_banner.jpg');">
+                    </div>
+                </div>
+                <!-- Bottom Right Square (Whoop) -->
+                <div class="col-md-6">
+                    <div class="discover-card square-card rounded-4 shadow-sm" 
+                         style="background-image: url('whoop_banner.jpg');">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    /* Base styling for all discover cards */
+.discover-card {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 250px; /* Fallback for mobile */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.discover-card:hover {
+    transform: scale(1.01);
+}
+
+/* Height Ratios */
+.large-card {
+    min-height: 520px; /* Matches the height of the right-side cluster */
+}
+
+.wide-card {
+    height: 250px;
+}
+
+.square-card {
+    height: 254px; /* Slight adjustment for alignment */
+}
+
+/* Overlay content positioning */
+.card-overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .large-card {
+        min-height: 350px;
+        margin-bottom: 1rem;
+    }
+    .square-card {
+        height: 300px;
+    }
+}
+</style>
+
+
+
 </main>
 
 
